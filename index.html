@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendix — A plataforma completa para gerenciar seu negócio</title>
+  <meta name="description" content="Agendamentos, clientes, equipe, financeiro e relatórios em um único sistema. Simples e poderoso. Ideal para salões, barbearias, clínicas e muito mais." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">
+        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="10" fill="url(#logoGrad)"/>
+          <path d="M20 8L30 30H22.5L20 24L17.5 30H10L20 8Z" fill="white" opacity="0.95"/>
+          <path d="M15.5 22H24.5" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#4B0082"/>
+              <stop offset="1" stop-color="#8F00FF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>Agendix</span>
+      </a>
+      <nav class="navbar__links">
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#para-quem">Para quem</a>
+        <a href="#depoimentos">Depoimentos</a>
+      </nav>
+      <div class="navbar__actions">
+        <a href="https://wa.me/5534319525122?text=Ol%C3%A1%21+Tenho+interesse+no+Agendix+e+gostaria+de+saber+mais." target="_blank" class="btn btn--whatsapp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Falar no WhatsApp
+        </a>
+        <a href="https://agendix.digital" target="_blank" class="btn btn--primary">Teste gratis</a>
+      </div>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#para-quem">Para quem</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="https://wa.me/5534319525122?text=Ol%C3%A1%21+Tenho+interesse+no+Agendix+e+gostaria+de+saber+mais." target="_blank" class="btn btn--whatsapp">Falar no WhatsApp</a>
+      <a href="https://agendix.digital" target="_blank" class="btn btn--primary">Teste gratis</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg-glow"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge">Teste gratis por 3 dias — sem cartao de credito</div>
+        <h1 class="hero__headline">
+          A plataforma completa para<br />
+          <span class="gradient-text">gerenciar seu negocio</span><br />
+          e encantar seus clientes.
+        </h1>
+        <p class="hero__sub">
+          Agendamentos, clientes, equipe, financeiro e relatorios em um unico sistema.
+          Simples, rapido e poderoso.
+        </p>
+        <div class="hero__cta">
+          <a href="https://agendix.digital" target="_blank" class="btn btn--primary btn--lg">Comecar agora — e gratis</a>
+          <a href="#funcionalidades" class="btn btn--ghost btn--lg">Ver funcionalidades</a>
+        </div>
+        <div class="hero__social-proof">
+          <div class="avatar-group">
+            <div class="avatar" style="background:#8F00FF">J</div>
+            <div class="avatar" style="background:#4B0082">M</div>
+            <div class="avatar" style="background:#6B21A8">P</div>
+            <div class="avatar" style="background:#7C3AED">A</div>
+          </div>
+          <p>Mais de <strong>500 profissionais</strong> ja confiam no Agendix</p>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="dashboard-mockup">
+          <div class="mockup__bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="mockup__url">agendix.digital</span>
+          </div>
+          <div class="mockup__body">
+            <div class="mockup__sidebar">
+              <div class="mockup__logo-sm">
+                <svg width="20" height="20" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="url(#lg2)"/><path d="M20 8L30 30H22.5L20 24L17.5 30H10L20 8Z" fill="white"/><defs><linearGradient id="lg2" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#4B0082"/><stop offset="1" stop-color="#8F00FF"/></linearGradient></defs></svg>
+              </div>
+              <div class="mockup__nav-item mockup__nav-item--active"></div>
+              <div class="mockup__nav-item"></div>
+              <div class="mockup__nav-item"></div>
+              <div class="mockup__nav-item"></div>
+              <div class="mockup__nav-item"></div>
+            </div>
+            <div class="mockup__main">
+              <div class="mockup__stats">
+                <div class="stat-card">
+                  <div class="stat-card__label">Agendamentos hoje</div>
+                  <div class="stat-card__value">25</div>
+                  <div class="stat-card__delta stat-card__delta--up">+15% vs ontem</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-card__label">Faturamento hoje</div>
+                  <div class="stat-card__value">R$ 2.450</div>
+                  <div class="stat-card__delta stat-card__delta--up">+20% vs ontem</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-card__label">Clientes ativos</div>
+                  <div class="stat-card__value">128</div>
+                  <div class="stat-card__delta stat-card__delta--up">+8% vs ontem</div>
+                </div>
+              </div>
+              <div class="mockup__chart">
+                <div class="chart-bar" style="height:40%"></div>
+                <div class="chart-bar" style="height:65%"></div>
+                <div class="chart-bar" style="height:50%"></div>
+                <div class="chart-bar" style="height:80%"></div>
+                <div class="chart-bar" style="height:60%"></div>
+                <div class="chart-bar chart-bar--active" style="height:90%"></div>
+                <div class="chart-bar" style="height:70%"></div>
+              </div>
+              <div class="mockup__appointments">
+                <div class="appt-item"><span class="appt-time">09:00</span><span class="appt-name">Joao Silva</span><span class="appt-service">Corte</span></div>
+                <div class="appt-item"><span class="appt-time">10:30</span><span class="appt-name">Maria Oliveira</span><span class="appt-service">Escova</span></div>
+                <div class="appt-item"><span class="appt-time">13:00</span><span class="appt-name">Pedro Santos</span><span class="appt-service">Barba</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-card floating-card--1">
+          <div class="fc__icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8F00FF" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div>
+            <div class="fc__title">Agendamento confirmado</div>
+            <div class="fc__sub">Ana Costa — 14:30</div>
+          </div>
+        </div>
+        <div class="floating-card floating-card--2">
+          <div class="fc__icon fc__icon--green">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div>
+            <div class="fc__title">Meta atingida!</div>
+            <div class="fc__sub">R$ 5.000 este mes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__brands">
+      <div class="container">
+        <p class="hero__brands-label">Ideal para</p>
+        <div class="hero__brands-list">
+          <span>Saloes de Beleza</span>
+          <span class="divider">·</span>
+          <span>Barbearias</span>
+          <span class="divider">·</span>
+          <span>Clinicas Esteticas</span>
+          <span class="divider">·</span>
+          <span>Studios de Pilates</span>
+          <span class="divider">·</span>
+          <span>Nail Design</span>
+          <span class="divider">·</span>
+          <span>Tatuadores</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTAQUES RAPIDOS -->
+  <section class="highlights">
+    <div class="container highlights__grid">
+      <div class="highlight-item">
+        <div class="highlight-item__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div>
+          <h3>Agenda inteligente e sem conflitos</h3>
+          <p>Visualize e gerencie todos os horarios em um calendario interativo. O sistema bloqueia automaticamente conflitos de horario.</p>
+        </div>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-item__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <h3>Gestao completa de clientes</h3>
+          <p>Historico completo de cada cliente, preferencias, servicos anteriores e muito mais para fidelizar e atender melhor.</p>
+        </div>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-item__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div>
+          <h3>Controle financeiro e comissoes</h3>
+          <p>Acompanhe faturamento, aplique descontos e calcule comissoes automaticamente por profissional.</p>
+        </div>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-item__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div>
+          <h3>Confirmacoes via WhatsApp</h3>
+          <p>Lembretes e confirmacoes automaticas enviados via WhatsApp reduzem faltas e melhoram a experiencia do cliente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNCIONALIDADES DETALHADAS -->
+  <section class="features" id="funcionalidades">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Funcionalidades</div>
+        <h2>Tudo que voce precisa em um so lugar</h2>
+        <p>Desenvolvido especificamente para negocios de saude e beleza. Sem complicacao, sem excesso.</p>
+      </div>
+
+      <!-- Feature 1 -->
+      <div class="feature-block">
+        <div class="feature-block__visual">
+          <div class="feature-card-demo">
+            <div class="calendar-demo">
+              <div class="cal-header">
+                <span class="cal-month">Junho 2025</span>
+                <div class="cal-nav">
+                  <button>&#8249;</button>
+                  <button>&#8250;</button>
+                </div>
+              </div>
+              <div class="cal-grid">
+                <span class="cal-day-name">Dom</span><span class="cal-day-name">Seg</span><span class="cal-day-name">Ter</span><span class="cal-day-name">Qua</span><span class="cal-day-name">Qui</span><span class="cal-day-name">Sex</span><span class="cal-day-name">Sab</span>
+                <span></span><span></span><span></span><span></span><span></span><span></span><span>1</span>
+                <span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span class="cal-today">7</span><span>8</span>
+                <span>9</span><span>10</span><span class="cal-event">11</span><span>12</span><span>13</span><span class="cal-event">14</span><span>15</span>
+                <span>16</span><span>17</span><span>18</span><span class="cal-event">19</span><span>20</span><span>21</span><span>22</span>
+              </div>
+              <div class="cal-events">
+                <div class="cal-event-item" style="border-color:#8F00FF">
+                  <span>09:00</span> Joao Silva — Corte de Cabelo
+                </div>
+                <div class="cal-event-item" style="border-color:#4B0082">
+                  <span>10:30</span> Maria Oliveira — Escova
+                </div>
+                <div class="cal-event-item" style="border-color:#7C3AED">
+                  <span>13:00</span> Pedro Santos — Barba
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-block__content">
+          <div class="feature-num">01</div>
+          <h3>Agenda visual e intuitiva</h3>
+          <p>Um calendario completo que mostra todos os agendamentos por dia, semana ou mes. Crie novos horarios com um clique, visualize a disponibilidade de cada profissional e evite conflitos automaticamente.</p>
+          <ul class="feature-list">
+            <li>Calendario diario, semanal e mensal</li>
+            <li>Filtros por profissional</li>
+            <li>Criacao rapida com arrastar e soltar</li>
+            <li>Verificacao automatica de conflitos</li>
+            <li>Historico completo de agendamentos</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-block feature-block--reverse">
+        <div class="feature-block__visual">
+          <div class="feature-card-demo">
+            <div class="metrics-demo">
+              <div class="metrics-header">Dashboard — Junho 2025</div>
+              <div class="metrics-row">
+                <div class="metric-box">
+                  <div class="metric-box__val">R$ 12.480</div>
+                  <div class="metric-box__label">Faturamento</div>
+                  <div class="metric-box__delta up">+24%</div>
+                </div>
+                <div class="metric-box">
+                  <div class="metric-box__val">187</div>
+                  <div class="metric-box__label">Agendamentos</div>
+                  <div class="metric-box__delta up">+18%</div>
+                </div>
+              </div>
+              <div class="metrics-chart-area">
+                <div class="metrics-bar-group">
+                  <div class="mb" style="height:45%"></div>
+                  <div class="mb" style="height:60%"></div>
+                  <div class="mb" style="height:40%"></div>
+                  <div class="mb" style="height:75%"></div>
+                  <div class="mb" style="height:55%"></div>
+                  <div class="mb mb--hl" style="height:90%"></div>
+                  <div class="mb" style="height:70%"></div>
+                </div>
+              </div>
+              <div class="top-pros">
+                <div class="pro-row"><div class="pro-avatar" style="background:#4B0082">C</div><span>Carlos</span><span class="pro-val">R$ 3.250</span></div>
+                <div class="pro-row"><div class="pro-avatar" style="background:#8F00FF">A</div><span>Amanda</span><span class="pro-val">R$ 2.950</span></div>
+                <div class="pro-row"><div class="pro-avatar" style="background:#6B21A8">L</div><span>Lucas</span><span class="pro-val">R$ 1.750</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-block__content">
+          <div class="feature-num">02</div>
+          <h3>Metricas e relatorios em tempo real</h3>
+          <p>Tome decisoes baseadas em dados. Acompanhe o faturamento, os servicos mais realizados, o desempenho de cada profissional e o crescimento do seu negocio com graficos claros e filtros por periodo.</p>
+          <ul class="feature-list">
+            <li>Faturamento diario, mensal e por periodo</li>
+            <li>Ranking dos profissionais</li>
+            <li>Servicos mais realizados</li>
+            <li>Comparativo de crescimento</li>
+            <li>Exportacao para Excel</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="feature-block">
+        <div class="feature-block__visual">
+          <div class="feature-card-demo">
+            <div class="whatsapp-demo">
+              <div class="wa-header">
+                <div class="wa-avatar">A</div>
+                <div>
+                  <div class="wa-name">Agendix</div>
+                  <div class="wa-status">online</div>
+                </div>
+              </div>
+              <div class="wa-messages">
+                <div class="wa-msg wa-msg--in">
+                  <p>Ola, Ana! Lembramos que voce tem um agendamento amanha as 14:30 com Maria para Escova.</p>
+                  <span class="wa-time">Ontem 18:00</span>
+                </div>
+                <div class="wa-msg wa-msg--out">
+                  <p>Confirmo! Estarei la</p>
+                  <span class="wa-time">Ontem 18:42</span>
+                </div>
+                <div class="wa-msg wa-msg--in">
+                  <p>Otimo! Te esperamos amanha. Ate mais!</p>
+                  <span class="wa-time">Ontem 18:43</span>
+                </div>
+              </div>
+              <div class="wa-campaign">
+                <div class="campaign-badge">Campanha enviada para 148 clientes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-block__content">
+          <div class="feature-num">03</div>
+          <h3>WhatsApp integrado — lembretes e campanhas</h3>
+          <p>Reduza faltas com lembretes automaticos enviados via WhatsApp antes do horario. Crie campanhas de marketing personalizadas para reativar clientes antigos, divulgar promocoes e muito mais.</p>
+          <ul class="feature-list">
+            <li>Lembretes automaticos de agendamento</li>
+            <li>Campanhas segmentadas para sua base</li>
+            <li>Importacao de contatos via CSV</li>
+            <li>Agendamento de envios</li>
+            <li>Historico de campanhas</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GRADE DE RECURSOS -->
+  <section class="resources">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Mais recursos</div>
+        <h2>Uma suite completa de gestao</h2>
+        <p>Cada modulo foi pensado para simplificar o dia a dia do seu negocio.</p>
+      </div>
+      <div class="resources__grid">
+        <div class="resource-card">
+          <div class="resource-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4>Gestao de Profissionais</h4>
+          <p>Cadastre sua equipe com fotos, especialidades, horarios de trabalho e dias disponiveis. Controle quem atende o que.</p>
+        </div>
+        <div class="resource-card">
+          <div class="resource-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h4>Controle Financeiro</h4>
+          <p>Registre valores de cada atendimento, aplique descontos percentuais ou fixos e acompanhe o caixa do negocio em tempo real.</p>
+        </div>
+        <div class="resource-card">
+          <div class="resource-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h4>Metas e Objetivos</h4>
+          <p>Defina metas de faturamento, numero de atendimentos ou fidelizacao para profissionais e equipe. Acompanhe o progresso em tempo real.</p>
+        </div>
+        <div class="resource-card">
+          <div class="resource-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <h4>Controle de Estoque</h4>
+          <p>Gerencie produtos e insumos do seu negocio. Registre entradas e saidas, organize por categorias e exporte para Excel.</p>
+        </div>
+        <div class="resource-card">
+          <div class="resource-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h4>Seguranca e Privacidade</h4>
+          <p>Seus dados protegidos com autenticacao JWT, criptografia e headers de seguranca avancados. Acesso isolado por empresa.</p>
+        </div>
+        <div class="resource-card">
+          <div class="resource-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h4>Acesse de qualquer lugar</h4>
+          <p>Sistema 100% web, acessivel pelo celular, tablet ou computador. Sem instalacao, sem atualizacoes manuais, sempre disponivel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUEM -->
+  <section class="for-who" id="para-quem">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Para quem e o Agendix</div>
+        <h2>Feito para quem vive de agendamento</h2>
+        <p>Se o seu negocio depende de horarios marcados, o Agendix e para voce.</p>
+      </div>
+      <div class="for-who__grid">
+        <div class="for-who__card">
+          <div class="for-who__emoji">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8F00FF" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h4>Saloes de Beleza</h4>
+          <p>Gerencie cortes, coloracoes, tratamentos e toda a equipe em uma so plataforma. Sem papel, sem agenda fisica.</p>
+        </div>
+        <div class="for-who__card">
+          <div class="for-who__emoji">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8F00FF" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h4>Barbearias</h4>
+          <p>Organize a fila de espera, os horarios dos barbeiros e acompanhe o faturamento de cada profissional separadamente.</p>
+        </div>
+        <div class="for-who__card">
+          <div class="for-who__emoji">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8F00FF" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h4>Clinicas Esteticas</h4>
+          <p>Controle procedimentos de maior valor, historico de cada paciente e campanhas para trazer clientes de volta.</p>
+        </div>
+        <div class="for-who__card">
+          <div class="for-who__emoji">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8F00FF" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4>Studios e Atelies</h4>
+          <p>De nail design a tatuagem, organize seus horarios, controle o estoque de insumos e nunca mais perca um agendamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="testimonials" id="depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Depoimentos</div>
+        <h2>Quem usa, recomenda</h2>
+        <p>Profissionais que transformaram a gestao do negocio com o Agendix.</p>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <svg width="16" height="16" fill="#8F00FF" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="#8F00FF" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="#8F00FF" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="#8F00FF" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="#8F00FF" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote>"O Agendix mudou completamente como eu gerencio meu salao. Antes eu perdia horarios, hoje tenho tudo organizado e ainda vejo o faturamento do dia no celular."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #4B0082, #8F00FF)">C</div>
+            <div>
+              <strong>Camila Rodrigues</strong>
+              <span>Dona de salao — Sao Paulo</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <svg width="16" height="16" fill="#8F00FF" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="#8F00FF" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="#8F00FF" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="#8F00FF" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="#8F00FF" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote>"As metas e o controle de comissao dos barbeiros foram o diferencial pra mim. A equipe ficou mais motivada e consigo ver quem esta performando melhor."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #6B21A8, #8F00FF)">R</div>
+            <div>
+              <strong>Rafael Mendes</strong>
+              <span>Dono de barbearia — Belo Horizonte</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <svg width="16" height="16" fill="#8F00FF" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="#8F00FF" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="#8F00FF" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="#8F00FF" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" fill="#8F00FF" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote>"Os lembretes automaticos pelo WhatsApp reduziram minhas faltas em quase 70%. Meus clientes adoraram receber a confirmacao e eu nao perco mais tempo ligando."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #4B0082, #7C3AED)">J</div>
+            <div>
+              <strong>Julia Nascimento</strong>
+              <span>Esteticista — Rio de Janeiro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-box__glow"></div>
+        <div class="cta-box__content">
+          <h2>Comece a usar o Agendix hoje mesmo</h2>
+          <p>Teste gratis por 3 dias, sem compromisso e sem cartao de credito. Configure em minutos e ja comece a agendar.</p>
+          <div class="cta-box__actions">
+            <a href="https://agendix.digital" target="_blank" class="btn btn--white btn--lg">Criar conta gratis</a>
+            <a href="https://agendix.digital" target="_blank" class="btn btn--outline-white btn--lg">Entrar na plataforma</a>
+          </div>
+          <div class="cta-box__check">
+            <span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              3 dias gratis
+            </span>
+            <span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Sem cartao de credito
+            </span>
+            <span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Cancele quando quiser
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="navbar__logo">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="url(#footerLg)"/><path d="M20 8L30 30H22.5L20 24L17.5 30H10L20 8Z" fill="white" opacity="0.95"/><path d="M15.5 22H24.5" stroke="white" stroke-width="2.5" stroke-linecap="round"/><defs><linearGradient id="footerLg" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#4B0082"/><stop offset="1" stop-color="#8F00FF"/></linearGradient></defs></svg>
+          <span>Agendix</span>
+        </a>
+        <p>A plataforma completa para gerenciar seu negocio e encantar seus clientes.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h5>Produto</h5>
+          <a href="#funcionalidades">Funcionalidades</a>
+          <a href="https://agendix.digital" target="_blank">Acessar sistema</a>
+          <a href="https://agende.agendix.digital" target="_blank">Pagina de agendamento</a>
+        </div>
+        <div class="footer__col">
+          <h5>Empresa</h5>
+          <a href="#para-quem">Para quem e</a>
+          <a href="#depoimentos">Depoimentos</a>
+        </div>
+        <div class="footer__col">
+          <h5>Contato</h5>
+          <a href="https://agendix.digital" target="_blank">agendix.digital</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>2025 Agendix. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
